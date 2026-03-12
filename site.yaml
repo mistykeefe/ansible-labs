@@ -1,7 +1,7 @@
 ---
 - name: Install and start Apache
   hosts: web
-  become: true
+  become: false
   tasks:
     - name: Ensure the httpd package is installed
       ansible.builtin.package:
